@@ -14,7 +14,7 @@ const CTA = ({ onClick }: Props) => {
       <div className="flex flex-col p-4 md:flex-row max-w-7xl mx-auto gap-x-4 mb-10 md:text-lg">
         <button
           onClick={onClick}
-          className="bg-[#82c828] text-white py-2  px-10  rounded-full md:flex-1 md:py-3"
+          className="cursor-pointer bg-[#82c828] text-white py-2  px-10  rounded-full md:flex-1 md:py-3"
         >
           Ver paquetes
         </button>

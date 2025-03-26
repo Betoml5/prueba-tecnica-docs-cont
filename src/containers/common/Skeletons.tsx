@@ -7,7 +7,7 @@ interface Props {
 
 const Skeletons = ({ count = 4 }: Props) => {
   return (
-    <div className="flex flex-wrap gap-4">
+    <div className="flex flex-col flex-wrap gap-4 md:flex-row">
       {Array(count)
         .fill(0)
         .map((_, index) => (
