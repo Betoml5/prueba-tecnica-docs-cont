@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Docs Digitales",
-  description: "Documentación de la API de Docs Digitales",
+  description: "Prueba técnica de Conta Digitales",
 };
 
 export default function RootLayout({

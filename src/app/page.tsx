@@ -6,6 +6,7 @@ import Header from "@/components/Header";
 import Modal from "@/components/Modal";
 import Steps from "@/components/Steps";
 import Video from "@/components/Video";
+import Skeletons from "@/containers/common/Skeletons";
 import Packages from "@/containers/Packages";
 import useModal from "@/hooks/useModal";
 import { getPackages } from "@/lib/api";
@@ -44,7 +45,7 @@ export default function Home() {
         </section>
         <section>
           <Modal title="Paquetes" isOpen={isOpen} onClose={closeModal}>
-            <Suspense fallback={<div>Loading...</div>}>
+            <Suspense fallback={<Skeletons count={4} />}>
               <Packages items={packages} />
             </Suspense>
           </Modal>
