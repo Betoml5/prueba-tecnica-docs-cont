@@ -44,7 +44,7 @@ export default function Home() {
           <CTA onClick={openModal} />
         </section>
         <section>
-          <Modal title="Paquetes" isOpen={isOpen} onClose={closeModal}>
+          <Modal title="Lista de paquetes" isOpen={isOpen} onClose={closeModal}>
             <Suspense fallback={<Skeletons count={4} />}>
               <Packages items={packages} />
             </Suspense>
