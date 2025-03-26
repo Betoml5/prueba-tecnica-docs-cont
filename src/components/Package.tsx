@@ -7,7 +7,7 @@ interface Props {
 
 const Package = ({ item }: Props) => {
   return (
-    <div className="flex-1 text-center bg-package-background p-6 rounded-lg">
+    <div className="flex-1 text-center bg-package-background p-6 rounded-lg cursor-pointer transition duration-500 hover:scale-105">
       <h2 className="text-2xl font-bold text-package-text">{item.name}</h2>
       <hr />
       <div className="flex justify-center  items-center mt-4 md:mb-2">
