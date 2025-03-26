@@ -3,6 +3,8 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --package-card-background: #d9eaf3;
+  --package-card-text: #387ab2;
 }
 
 @theme inline {
@@ -10,13 +12,25 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --background-package-background: var(--package-card-background);
+  --color-package-text: var(--package-card-text);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+@theme {
+  --color-package-text: var(--package-card-text);
+  --color-package-background: var(--package-card-background);
+}
+
+.card {
+  @apply flex flex-col items-center justify-center  h-64 bg-white shadow-md rounded-lg p-4 md:text-xl;
+}
+
+.card img {
+  @apply mx-auto md:w-28;
+}
+
+.card p {
+  @apply font-normal text-center mt-4 md:text-xl;
 }
 
 body {
